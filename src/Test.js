@@ -123,9 +123,13 @@ function Room() {
 	let startTime = 0;
 	let endTime = 0;
 	const [value, setValue] = useState(0);
+	const [duration, setDuration] = useState(cc.duration);
 
 	const [trail, api] = useTrail(items.length, (index) => ({
-		config: cc,
+		config: {
+			duration: duration,
+			mass: 1,
+		},
 		from: a,
 		loop: { reverse: true },
 		// reset: true,
@@ -160,7 +164,7 @@ function Room() {
 					return v + 1;
 			});
 			testFrame();
-		}, cc.duration / 60);
+		}, duration / 10);
 		// setValue(v => {
 		// 	if (v < 100)
 		// 		return v + 1;
@@ -187,7 +191,7 @@ function Room() {
 	return (
 		<>
 
-			<div style={{ position: 'absolute', zIndex: 1, top: 0, left: 0, width: '100%', height: '48px', overflow: 'hidden' }}>
+			<div style={{ position: 'absolute', zIndex: 1, top: 0, left: 0, width: '100%', height: '68px', overflow: 'hidden' }}>
 
 				<button onClick={() => {
 					start = true;
@@ -196,7 +200,13 @@ function Room() {
 					});
 					testFrame();
 					startTime = new Date().getTime();
-					api.start({ ...trail, from: a, to: b });
+					api.start({
+						...trail,
+						config: {
+							duration: duration,
+							mass: 1,
+						}, from: a, to: b
+					});
 					api.resume();
 					// interval = setInterval(() => {
 					// 	setValue(value => {
@@ -212,7 +222,7 @@ function Room() {
 				}}>Start</button>
 
 				<button onClick={async () => {
-					// start = true;
+					start = true;
 					api.resume();
 					startTime = new Date().getTime();
 					api.start({ ...trail, from: a, to: b, loop: { reverse: true } });
@@ -230,6 +240,12 @@ function Room() {
 				}}  >{pause ? 'Resume' : 'Pause'}</button>
 
 				<Slider percentage={value} />
+				<br />
+				<label>Duration </label>
+				<input tyle="text" value={duration} onChange={(e) => {
+					setDuration(e.target.value);
+					console.log(duration);
+				}} />
 			</div>
 			<Canvas>
 
