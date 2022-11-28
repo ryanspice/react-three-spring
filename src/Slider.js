@@ -1,7 +1,7 @@
 
 import React, { useEffect, useRef, useState } from 'react'
 const Slider = (props) => {
-	console.log(props);
+
 	const [percentage, setPercentage] = useState(props?.percentage || 0);
 
 	function onInput(e) {

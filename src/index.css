@@ -16,9 +16,3 @@ canvas {
   height:100vh !important;
   width:100vw !important;
 }
-
-.opacityElement{width:100px; height:100px;display:inline-block}
-
-#rightElement{background:red}
-#leftElement{background:blue}
-
