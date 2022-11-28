@@ -70,8 +70,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-https://github.com/pmndrs/react-springhttps://docs.pmnd.rs/react-three-fiber/getting-started/examples
+## references
 
+https://react-spring-visualizer.com/#translateY
+
+
+https://github.com/pmndrs/react-spring
+https://github.com/pmndrs/react-three-fiber
+https://docs.pmnd.rs/react-three-fiber/getting-started/introduction
+https://docs.pmnd.rs/react-three-fiber/getting-started/examples
+
+https://fundamental.sh/p/high-performance-reactive-3d-animation-with-react-and-rxjs
+
+https://varun.ca/modular-webgl/
 
 
 https://gist.github.com/drcmda/cf501f79bb8694565a9711673ef016db#file-timeline-js
@@ -94,6 +105,7 @@ https://codesandbox.io/s/y18m1
 
 https://react-spring.dev/classes/spring-value#springvalue
 
+## instructions
 
 Here is the technical challenge I’d like you do to do. If you have any questions let me know.
 
