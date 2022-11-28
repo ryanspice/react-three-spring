@@ -115,7 +115,3 @@ react (18.2.0)
 @react-spring/three (9.5.4)
 @react-spring/web (9.5.4)
 Set the animation as a loop with a basic timeline for selecting a duration, pausing animation, and playing animation.
-
-https://codepen.io/rouzbehHz/pen/poKNGmj
-
-Sincerely,
