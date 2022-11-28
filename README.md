@@ -105,6 +105,16 @@ https://codesandbox.io/s/y18m1
 
 https://react-spring.dev/classes/spring-value#springvalue
 
+
+##timeline
+
+https://greensock.com/docs/v3/GSAP/gsap.timeline()
+https://greensock.com/docs/v3/GSAP/Timeline
+
+https://greensock.com/forums/topic/28657-timeline-step-by-step/
+https://www.reddit.com/r/reactjs/comments/ajggsh/it_is_possible_to_make_sequential_animation_with/
+
+
 ## instructions
 
 Here is the technical challenge I’d like you do to do. If you have any questions let me know.
